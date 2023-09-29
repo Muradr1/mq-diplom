@@ -112,10 +112,8 @@
   box-sizing: border-box;
   padding-left: 10px;
   background-color: #f4f7f6;
-  padding-left: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  display: block;
   background-image: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
   background-size: 10px;
@@ -221,7 +219,6 @@
   margin-bottom: 147px;  
   line-height: 75px;
   text-transform: uppercase;
-  color: #ffffff;
   font-family: "Open sans", san-serif;
   font-weight: 700; 
 }
@@ -321,10 +318,13 @@
 }
 .picture-article{
   width: 381px;
-  height: 294px;
+  /*height: 294px;*/
   background-color: #eff6f1;
 }
-
+.picture-img {
+  display: block;
+  width: 100%;
+}
 .article-info{
   max-width: 370px;
   margin-left: 30px;
@@ -562,23 +562,26 @@ font-family: "Open Sans";
 }
 .list-tags{
   display: flex;
-  flex-wrap: wrap
-    
+  flex-wrap: wrap;
+  gap: 7px 6px
 }
 .list-items-tag{
-  margin: 0 5px 5px 0;
-  border: 3px solid #eeeeee;  
+  padding: 3px 14px 4px 14px;
+  border: 3px solid #eeeeee;
+  text-transform: uppercase;  
+  font-size: 12px;
+  font-weight: 700;
 }
 .list-items-tag:hover{
   border: 3px solid #b59f5b;
 }
 .tag{
-  padding: 10px 15px 10px 15px;
-  font-size: 12px;
+ 
+ 
   line-height: 40px;
-  text-transform: uppercase;
+  
   color: #0f0d0e;
-  font-weight: 700;
+ 
   font-family: "Open Sans";
  
 }
@@ -769,7 +772,7 @@ font-family: "Open Sans";
     background-position: right bottom;
   }
   .container {
-    width: 700px;
+    width: 100%;
   }
   .menu-list{
     display: none;
@@ -826,7 +829,7 @@ font-family: "Open Sans";
     
   }
   .wrapper {
-    width: 700px;
+    width: 100%;
   }
   .articles {
     width: 100%;
@@ -849,7 +852,7 @@ font-family: "Open Sans";
     width: 100%;
   }
   .shop{
-    width: 700px;
+    width: 100%;
   }
   .wrapper-shop {
     display: flex;
@@ -861,10 +864,7 @@ font-family: "Open Sans";
     width: calc(50% - 70px * 2 / 3);
   }
 
-  .footer{
-    width: 700px;
-    margin: 0 auto;
-  }
+
   .container-footer {
     width: 100%;
   }
@@ -911,15 +911,21 @@ font-family: "Open Sans";
     width: 100%;
     background-color: #000;
   }
-  .tegs {
-    width: calc(330px - 5px * 3 / 4);
+ 
+  .list-tags {
+    width: 100%;
+
+
   }
+
   .wrapper {
-    width: 330px;
-    flex-direction: column;
+    width: 100%;
+  }
+  .picture-article {
+    width: 100%;
   }
   .shop {
-    width: 330px;
+    width: 100%;
   }
   .wrapper-shop {
     margin-right: 25px;
@@ -928,6 +934,6 @@ font-family: "Open Sans";
     width: 100%;
   }
   .footer{
-    width: 330px;
+    width: 100%;
   }
 }
