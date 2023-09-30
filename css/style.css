@@ -12,14 +12,14 @@
   src: url(../fonts/OpenSans-Bold.woff); 
   font-weight: bold;
   font-style: normal;
-  display: swap;
+  font-display: swap;
 }
 @font-face{
   font-family: "Open sans";
   src: url(../fonts/OpenSans-Regular.woff); 
   font-weight: regular;
   font-style: normal;
-  display: swap;
+  font-display: swap;
 }
 .header{
   
@@ -869,6 +869,11 @@ font-family: "Open Sans";
     width: 100%;
   }
 }
+@media (min-width: 641px) and (orientation: landscape) {
+  .trend {
+    width: calc(25% - 2px * 3 / 4);
+  }
+} 
 @media (max-width: 640px) {
   .popup-content {
     width: 330px;
@@ -890,7 +895,7 @@ font-family: "Open Sans";
     background-position: center center;
   }
   .container {
-    width: 330px;
+    width: 100%;
   }
   .trend {  
     width: 100%;
@@ -935,5 +940,10 @@ font-family: "Open Sans";
   }
   .footer{
     width: 100%;
+  }
+}
+@media (max-width: 640px) and (orientation: portrait) {
+  .trend {
+    width: calc(50% - 2px * 3 / 4);
   }
 }
