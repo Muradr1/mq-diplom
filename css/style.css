@@ -958,6 +958,9 @@ margin-bottom: 210px;
   .footer{
     width: 100%;
   }
+  .container-footer {
+    width: 100%;
+  }
 }
 @media (max-width: 640px) and (orientation: landscape) {
   .trend {
