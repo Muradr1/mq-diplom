@@ -179,14 +179,15 @@
 }
 .container{
   position: relative;
-  width: 1220px;
+  width: 1200px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
   z-index: 2;
 }  
+.wrapper-logo {
+  display: flex;
+  justify-content: space-between;
+}
 .logo{
   width: 179px;
   display: flex;  
@@ -211,10 +212,9 @@
  margin: 0 auto;
 }
 .title{
-  display: black;
+  display: inline-block;
   font-size: 45px;
   color: #ffffff;
-  text-align: center;
   margin-top: 125px;
   margin-bottom: 147px;  
   line-height: 75px;
@@ -326,7 +326,7 @@
   width: 100%;
 }
 .article-info{
-  max-width: 370px;
+  width: 370px;
   margin-left: 30px;
   font-size: 15px;
   line-height: 22px;
@@ -747,13 +747,13 @@ font-family: "Open Sans";
 .list-social{
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
 .social-icon{
   width: 20px;
   height: 20px;
-  display: block;
-  margin-right: 30px;   
+  display: block; 
 }
 .copyright{
   text-align: center;
@@ -817,6 +817,10 @@ font-family: "Open Sans";
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 55px;
   }
   .wrapper-trends {
     display: flex;
@@ -897,6 +901,13 @@ font-family: "Open Sans";
   .container {
     width: 100%;
   }
+  .title {
+    width: 328px;
+font-size: 26px;
+line-height: 36px;
+
+margin-bottom: 210px;
+  }
   .trend {  
     width: 100%;
   }
@@ -926,8 +937,14 @@ font-family: "Open Sans";
   .wrapper {
     width: 100%;
   }
+  .content {
+    width: 100%;
+  }
   .picture-article {
     width: 100%;
+  }
+  .article-info {
+    min-width: 370px;
   }
   .shop {
     width: 100%;
@@ -942,7 +959,7 @@ font-family: "Open Sans";
     width: 100%;
   }
 }
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 640px) and (orientation: landscape) {
   .trend {
     width: calc(50% - 2px * 3 / 4);
   }
