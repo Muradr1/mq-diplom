@@ -17,28 +17,32 @@
         </label>
         <h2 class="title-popup">Ваш фидбек</h2>
         <div class="feedback-content">
-          <label class="label">
-            <span class="title-select">Как часто вы заходите на сайт?</span>
-            <select class="select">
-              <option class="days" value="Почти каждый день">Почти каждый день</option>
-              <option value="-"></option>
-            </select>
-          </label>
-          <span class="email">Вы подпинаны на e-mail рассылку?</span>
-          <label class="radio-group">
-            <input type="radio" class="radio" name="radio" checked>
-            <span class="radio-text">Да</span>
-          </label>
-          <label class="radio-group">
-            <input type="radio" class="radio" name="radio">
-            <span class="radio-text">нет</span>
-          </label>
-          <div class="text">
-            <textarea class="question" placeholder="Может,больше рецептов?"></textarea>
-          </div>
-          <label class="btn-label">
-            <button class="btn-popup" type="submit">Отправить</button>
-          </label>
+          <form class="form-popup">
+            <label class="label">
+              <span class="title-select">Как часто вы заходите на сайт?</span>
+              <select class="select">
+                <option class="days" value="Почти каждый день"><span class=text-select>Почти каждый день</span></option>
+                <option value="-"></option>
+              </select>
+            </label>
+          </form>
+          <form class="form-popup">
+            <label class="radio-group">
+              <span class="email">Вы подпинаны на e-mail рассылку?</span>
+              <input type="radio" class="radio" name="radio" checked>
+              <span class="radio-text">Да</span>
+            </label>
+            <label class="radio-group">
+              <input type="radio" class="radio" name="radio">
+              <span class="radio-text">нет</span>
+            </label>  
+            <div class="text">
+              <textarea class="question" placeholder="Может,больше рецептов?"></textarea>
+            </div>
+            <label class="btn-label">
+              <button class="btn-popup" type="submit">Отправить</button>
+            </label>
+          </form>  
         </div>
       </div>
     </div>
@@ -166,7 +170,7 @@
             <a href="#0" class="header-link">10 мест, ради которых стоит проснуться на рассветe</a>
           </h2>
           <div class="info">
-            <span class="date-article">10 июня 2019</span>
+            <time class="date-article">10 июня 2019</time>
             <span class="author">Неизвестный автор</span>
           </div>
           <div class="article-description">
@@ -195,7 +199,7 @@
             <a href="#0" class="header-link">ЙОга для начинающих в домашних условиях</a>
           </h2>
           <div class="info">
-            <span class="date-article">10 июня 2019</span>
+            <time class="date-article">10 июня 2019</time>
             <span class="author">Неизвестный автор</span>
           </div>
           <div class="article-description">
@@ -221,7 +225,7 @@
             <a href="#0" class="header-link">Лучшие музыкальные фестивали этого лета</a>
           </h2>
           <div class="info">
-            <span class="date-article">10 июня 2019</span>
+            <time class="date-article">10 июня 2019</time>
             <span class="author">Неизвестный автор</span>
           </div>
           <div class="article-description">
@@ -253,7 +257,7 @@
             <a href="#0" class="header-link">Наукоёмкий подход к кулинарии</a>
           </h2>
           <div class="info">
-            <span class="date-article">10 июня 2019</span>
+            <time class="date-article">10 июня 2019</time>
             <span class="author">Неизвестный автор</span>
           </div>
           <div class="article-description">
@@ -285,7 +289,7 @@
             <a href="#0" class="header-link">делаем модные принты на подушках для интерьера</a>
           </h2>
           <div class="info">
-            <span class="date-article">10 июня 2019</span>
+            <time class="date-article">10 июня 2019</time>
             <span class="author">Неизвестный автор</span>
           </div>
           <div class="article-description">
@@ -305,7 +309,7 @@
               <img class="picture" src="images/2.jpg" alt="Пляж">
             </div>
             <div class="post-info">
-              <span class="date">14 июня 2019</span>
+              <time class="date">14 июня 2019</time>
               <h4 class="title-post">
                 <a href="#0" class="link-posts">10 мест, ради которых стоит проснуться</a>
               </h4>
@@ -318,7 +322,7 @@
               <img class="picture" src="images/151.jpg" alt="Йога на пляже">
             </div>
             <div class="post-info">
-              <span class="date">14 июня 2019</span>
+              <time class="date">14 июня 2019</time>
               <h4 class="title-post">
                 <a href="#0" class="link-posts">ЙОга для домашних</a>
               </h4>
@@ -331,7 +335,7 @@
               <img class="picture" src="images/45.jpg" alt="Классное место">
             </div>
             <div class="post-info">
-              <span class="date">14 июня 2019</span>
+              <time class="date">14 июня 2019</time>
               <h4 class="title-post">
                 <a href="#0" class="link-posts">Как мы превратили классное место в болкон</a>
               </h4>
@@ -344,7 +348,7 @@
               <img class="picture" src="images/501.jpg" alt="Посуда на столе">
             </div>
             <div class="post-info">
-              <span class="date">14 июня 2019</span>
+              <time class="date">14 июня 2019</time>
               <h4 class="title-post ">
                 <a href="#0" class="link-posts">Кулинарный подход к науке</a>
               </h4>
@@ -357,7 +361,7 @@
               <img class="picture" src="images/7.jpg" alt="Девушки с распущенными волосами">
             </div>
             <div class="post-info">
-              <span class="date">14 июня 2019</span>
+              <time class="date">14 июня 2019</time>
               <h4 class="title-post ">
                 <a href="#0" class="link-posts">Лучшие прически для распущенных волос</a>
               </h4>

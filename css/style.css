@@ -84,6 +84,11 @@
   text-align: center;
   padding-top: 55px;
   font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
 }
 .title-popup::after {
   content:"";
@@ -104,8 +109,17 @@
 .title-select{
   display: block;
   line-height: 24px;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans";
 }
 .select {
+
+  font-size: 13px;
+  color: #7a7c7b;
+  font-weight: 400;
+  font-family: "Open Sans";
   width: 330px;
   height:  45px;
   display: inline-block;
@@ -125,7 +139,9 @@
   margin-top: 35px;
   margin-bottom: 10px;
   font-size: 13px;
-  color: #787a79;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans";
 }
 
 .radio {
@@ -169,6 +185,13 @@
   padding: 20px;
   resize: none;
   box-sizing: border-box;
+}
+.question::placeholder {
+  opacity: 0.541;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans";
 }
 .btn-popup{
   width: 100%;
@@ -765,6 +788,9 @@ font-family: "Open Sans";
   font-family: "Open Sans";
 } 
 @media (max-width: 1200px) {
+  .title-popup {
+    font-size: 18px;
+  }
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
     background-position: right bottom;
@@ -832,6 +858,8 @@ font-family: "Open Sans";
     
   }
   .wrapper {
+    display: flex;
+    flex-wrap: nowrap;
     width: 100%;
     padding: 50px 30px 0 30px;
     gap: 30px;
@@ -843,8 +871,8 @@ font-family: "Open Sans";
    width: 100%;
   }
   .articles {
+    display: block;
     width: 100%;
-    flex-direction: column;
   }
   .articles::after{
     content:"";
@@ -855,6 +883,7 @@ font-family: "Open Sans";
     background-color: #eeeeee;
   }
   .article-info {
+    width: 100%;
     margin-left: 0;
     margin-top: 15px;
   }
@@ -895,12 +924,14 @@ font-family: "Open Sans";
   }
   .title-popup {
     padding-top: 25px;
+    font-size: 16px;
   }
   .select {
     width: 100%;
   }
   .btn-popup {
     margin-bottom: 25px;
+    font-size: 14px;
   }
   .header {
     background-image: url(../images/banner-mobile.jpg);
@@ -946,6 +977,7 @@ margin-bottom: 210px;
   }
 
   .wrapper {
+    flex-wrap: wrap;
     width: 100%;
   }
   .content {
